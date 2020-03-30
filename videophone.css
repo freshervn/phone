@@ -1,9 +1,91 @@
 *{
     box-sizing: border-box;
-    background-color: #07A3B2;
     color: #D9ecc7;
+    font-family: Arial, Helvetica, sans-serif;
 }
-h1{
+body{
+    background-color: #07A3B2;
+    margin: 0;
+    padding: 0;
+}
+#header{    
+    width: 100%;
+    padding: 5px 20% ;
+}
+#control{
+    position: fixed;
+    bottom: 0;   
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+}
+#control button{
+    background-color: #0567a8;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin: 0;
     text-align: center;
-    font-family:
+}
+#control button:hover{
+    background-color:#D9ecc7 ;
+    color: #07A3B2;
+}
+#control button:active{
+    background-color: #c8a3b5 ;
+}
+#containervideo{ 
+    display: none;
+    height: max-content;
+    background-color: rgba(37,37, 37.0,5);
+}
+.video{
+    margin: 4px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;    
+}
+.video:nth-child(even){
+    flex-direction:  row-reverse;
+    height: 100%;
+}
+.video span{
+    padding: 4px;
+    font-size: large;
+    height: 100%;
+    width: 30%;
+    font-weight: bold;
+}
+.video iframe{
+    width: 70%;
+}
+#homewindown{
+    text-align: center;
+}
+#csstricks{
+    width: 100%;
+    height: max-content;
+    display: none;
+}
+.css{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+}
+.css:nth-child(even){
+    flex-direction: row-reverse;
+}
+.css span{
+    width: 25%;
+    font-size: large;
+    height: 100%;
+    font-weight: bold;
+}
+.css iframe{
+    width: 75%;
 }
