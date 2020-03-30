@@ -81,8 +81,11 @@ body{
     flex-direction: row-reverse;
 }
 .css span{
+    align-items: baseline;
+    padding-top: 25%;
+    padding-left: 6px;
     width: 25%;
-    font-size: large;
+    font-size: 24px;
     height: 100%;
     font-weight: bold;
 }
